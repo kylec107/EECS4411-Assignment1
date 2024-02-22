@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beb63675-4bd4-4dc3-91d5-20a2152d2dc2" name="Changes" comment="Project setup">
+    <list default="true" id="beb63675-4bd4-4dc3-91d5-20a2152d2dc2" name="Changes" comment="Implemented functions for different tables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/memstore/table/ColumnTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memstore/table/ColumnTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/memstore/table/IndexedRowTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memstore/table/IndexedRowTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/memstore/table/RowTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memstore/table/RowTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -52,8 +60,8 @@
       <recent name="C:\Users\kcbro\IdeaProjects\EECS4411-Assignment1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.tests">
-    <configuration name="RandomizedLoaderTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PredicatedAllColumnsSumTest.testIndexedTable">
+    <configuration name="PredicatedAllColumnsSumTest.testIndexedTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EECS4411-Assignment1" />
       <extension name="coverage">
         <pattern>
@@ -62,9 +70,71 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="memstore.table" />
-      <option name="MAIN_CLASS_NAME" value="memstore.table.RandomizedLoaderTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="memstore.table.PredicatedAllColumnsSumTest" />
+      <option name="METHOD_NAME" value="testIndexedTable" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PredicatedAllColumnsSumTest.testRowTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EECS4411-Assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="memstore.table.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="memstore.table" />
+      <option name="MAIN_CLASS_NAME" value="memstore.table.PredicatedAllColumnsSumTest" />
+      <option name="METHOD_NAME" value="testRowTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PredicatedColumnSumTest.testIndexedTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EECS4411-Assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="memstore.table.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="memstore.table" />
+      <option name="MAIN_CLASS_NAME" value="memstore.table.PredicatedColumnSumTest" />
+      <option name="METHOD_NAME" value="testIndexedTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PredicatedColumnSumTest.testRowTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EECS4411-Assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="memstore.table.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="memstore.table" />
+      <option name="MAIN_CLASS_NAME" value="memstore.table.PredicatedColumnSumTest" />
+      <option name="METHOD_NAME" value="testRowTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="memstore.benchmarks in EECS4411-Assignment1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EECS4411-Assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="memstore.benchmarks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="memstore.benchmarks" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,11 +151,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.tests" />
-      <item itemvalue="JUnit.RandomizedLoaderTest.test" />
+      <item itemvalue="JUnit.PredicatedAllColumnsSumTest.testIndexedTable" />
+      <item itemvalue="JUnit.PredicatedAllColumnsSumTest.testRowTable" />
+      <item itemvalue="JUnit.PredicatedColumnSumTest.testIndexedTable" />
+      <item itemvalue="JUnit.PredicatedColumnSumTest.testRowTable" />
+      <item itemvalue="JUnit.memstore.benchmarks in EECS4411-Assignment1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RandomizedLoaderTest.test" />
+        <item itemvalue="JUnit.PredicatedAllColumnsSumTest.testIndexedTable" />
+        <item itemvalue="JUnit.memstore.benchmarks in EECS4411-Assignment1" />
+        <item itemvalue="JUnit.PredicatedAllColumnsSumTest.testRowTable" />
+        <item itemvalue="JUnit.PredicatedColumnSumTest.testIndexedTable" />
+        <item itemvalue="JUnit.PredicatedColumnSumTest.testRowTable" />
       </list>
     </recent_temporary>
   </component>
@@ -99,6 +177,7 @@
       <updated>1707344754195</updated>
       <workItem from="1707344755455" duration="8275000" />
       <workItem from="1708442536687" duration="937000" />
+      <workItem from="1708451408433" duration="20747000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1708442674588</created>
@@ -107,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708442674588</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Project setup">
+      <created>1708451531614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708451531614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +212,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project setup" />
+    <MESSAGE value="Implemented functions for different tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented functions for different tables" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/memstore/table/PredicatedColumnSumTest.java</url>
+          <line>39</line>
+          <properties class="memstore.table.PredicatedColumnSumTest" method="testIndexedTable">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
